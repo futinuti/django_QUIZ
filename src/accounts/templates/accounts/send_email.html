@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Activation
+{% endblock %}
+
+{% block header %}
+    An email has been sent
+{% endblock %}
+
+{% block content %}
+    <div class="mt-3 text-center">
+        <p>An email has been sent to your email address to activate your account.</p>
+        <a href="{% url 'index' %}" class="btn btn-outline-success">To Home</a>
+    </div>
+{% endblock %}
