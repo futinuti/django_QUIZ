@@ -1,24 +1,20 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.mixins import LoginRequiredMixin
 
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.views import LogoutView
-
 from django.core.signing import BadSignature
-
 from django.shortcuts import get_object_or_404
-
 from django.shortcuts import render
-
 from django.urls import reverse_lazy
+
 from django.views.generic import CreateView
 from django.views.generic import UpdateView
 
 from .forms import UserRegisterForm
-from .forms import UserUpdateForm
 from .forms import UserRepeatSend
-
+from .forms import UserUpdateForm
 from .utils import signer
 
 

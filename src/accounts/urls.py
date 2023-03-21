@@ -2,10 +2,10 @@ from django.urls import path
 from django.views.generic import TemplateView
 
 from .views import UserLoginView
-from .views import UserRepeatSendView
 from .views import UserLogoutView
 from .views import UserProfileUpdateView
 from .views import UserRegisterView
+from .views import UserRepeatSendView
 from .views import user_activate
 from .views import user_profile_view
 
