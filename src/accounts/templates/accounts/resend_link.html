@@ -3,8 +3,10 @@
 {% load crispy_forms_filters %}
 
 {% block title %}
-Sign In
+re Activation
 {% endblock %}
+
+{% block header %}Input Email{% endblock %}
 
 {% block content %}
     <div class="row">
@@ -13,10 +15,9 @@ Sign In
             <form method="post">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <a href="{% url 'password_reset' %}">If you forgot password, click here.</a>
-              <div class="text-center pt-3">
-                  <input type="submit" class="btn btn-outline-primary" value="SignIn">
-                  <a class="btn btn-outline-primary" href="{% url 'accounts:register' %}">SignUp</a>
+              <div class="text-center">
+                  <input type="submit" class="btn btn-outline-primary" value="Send">
+
               </div>
             </form>
         </div>

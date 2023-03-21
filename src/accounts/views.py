@@ -4,13 +4,16 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.views import LogoutView
 from django.core.signing import BadSignature
+
 from django.shortcuts import get_object_or_404
 from django.shortcuts import render
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView
 from django.views.generic import UpdateView
 
-from .forms import UserRegisterForm, UserUpdateForm
+from .forms import UserRegisterForm
+from .forms import UserUpdateForm
+from .forms import UserRepeatSend
 from .utils import signer
 
 
@@ -37,6 +40,13 @@ def user_activate(request, sign):
         user.save()
 
     return render(request, template)
+
+
+class UserRepeatSendView(CreateView):
+    model = get_user_model()
+    template_name = 'accounts/resend_link.html'
+    success_url = reverse_lazy('accounts:email_done')
+    form_class = UserRepeatSend
 
 
 class UserLoginView(LoginView):

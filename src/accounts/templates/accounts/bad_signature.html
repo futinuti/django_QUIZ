@@ -9,5 +9,5 @@
 {% endblock %}
 
 {% block content %}
-    <p>Your activation failed.You can <a href="{% url 'accounts:register' %}">register again.</a></p>
+    <p>Your activation failed. <a href="{% url 'accounts:resend' %}">Send link again.</a></p>
 {% endblock %}

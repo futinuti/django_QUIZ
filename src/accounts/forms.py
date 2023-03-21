@@ -4,8 +4,30 @@ from django.contrib.auth import password_validation
 from django.contrib.auth.forms import UserChangeForm
 from django.core.exceptions import ValidationError
 from django.forms import widgets
-
+from django.shortcuts import get_object_or_404
 from .apps import user_register
+
+
+class UserRepeatSend(forms.ModelForm):
+    email = forms.EmailField(label='email')
+
+    def save(self, commit=True):
+        # email = super().save(commit=False)
+        email = self.cleaned_data['email']
+        user = get_object_or_404(get_user_model(), email=email)
+
+        if commit:
+            user.save()
+
+        user_register.send(get_user_model(), instance=user)
+
+        return user
+
+    class Meta:
+        model = get_user_model()
+        fields = (
+            'email',
+        )
 
 
 class UserRegisterForm(forms.ModelForm):

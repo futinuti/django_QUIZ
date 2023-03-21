@@ -8,7 +8,7 @@ from django.dispatch import receiver
 
 
 def avatar_save(instance, filename):
-    f_name =f'profile/{instance.username}_logo'
+    f_name = f'profile/{instance.username}_logo'
     if os.path.exists(settings.MEDIA_ROOT / f_name):
         os.remove(settings.MEDIA_ROOT / f_name)
     return f_name
@@ -25,4 +25,3 @@ class User(AbstractUser):
 
     def __str__(self):
         return self.username
-
