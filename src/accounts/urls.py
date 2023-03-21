@@ -18,9 +18,9 @@ urlpatterns = [
     path('register/emaildone/',
          TemplateView.as_view(template_name='accounts/send_email.html'), name='email_done'),
     path('register/', UserRegisterView.as_view(), name='register'),
-    path('reactivation/', UserRepeatSendView.as_view(), name='resend'),
     path('login/', UserLoginView.as_view(), name='login'),
     path('logout/', UserLogoutView.as_view(), name='logout'),
+    path('reactivation/', UserRepeatSendView.as_view(), name='resend'),
     path('profile/', user_profile_view, name='profile'),
     path('profile/update/', UserProfileUpdateView.as_view(), name='profile_update'),
 ]
