@@ -1,5 +1,7 @@
 # Django QUIZ
 
+[![Testing](https://github.com/futinuti/django_QUIZ/actions/workflows/test.yml/badge.svg)](https://github.com/futinuti/django_QUIZ/actions/workflows/test.yml)
+
 ## Технические требования  
 ### Web-UI
   1. Регистрация
