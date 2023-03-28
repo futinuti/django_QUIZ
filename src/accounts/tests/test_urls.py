@@ -8,9 +8,9 @@ from accounts.views import user_activate
 from accounts.views import user_profile_view
 
 from django.test import SimpleTestCase
-from django.views.generic import TemplateView
 from django.urls import resolve
 from django.urls import reverse
+from django.views.generic import TemplateView
 
 
 class TestUrls(SimpleTestCase):
