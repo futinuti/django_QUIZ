@@ -37,3 +37,31 @@ class TestModels(TestCase):
 
     def test_convert_user_to_str(self):
         self.assertEqual(str(self.user), self.username)
+
+    def test_birthday_null(self):
+        meta = self.user._meta.get_field('birthday')
+        self.assertTrue(meta.null)
+
+    def test_birthday_blank(self):
+        meta = self.user._meta.get_field('birthday')
+        self.assertTrue(meta.blank)
+
+    def test_is_activated_default(self):
+        meta = self.user._meta.get_field('is_activated')
+        self.assertTrue(meta.default)
+
+    def test_is_activated_db_index(self):
+        meta = self.user._meta.get_field('is_activated')
+        self.assertTrue(meta.db_index)
+
+    def test_is_activated_label_is_correct(self):
+        is_activated_label = self.user._meta.get_field('is_activated').verbose_name
+        self.assertEqual(is_activated_label.split(), 'is_activated'.split('_'))
+
+    def test_birthday_label_is_correct(self):
+        birthday_label = self.user._meta.get_field('birthday').verbose_name
+        self.assertEqual(birthday_label, 'birthday')
+
+    def test_city_label_is_correct(self):
+        city_label = self.user._meta.get_field('city').verbose_name
+        self.assertEqual(city_label, 'city')

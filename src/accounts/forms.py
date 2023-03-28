@@ -45,7 +45,7 @@ class UserRegisterForm(forms.ModelForm):
     )
 
     def clean_password1(self):
-        ''' навешивается на перое поле для проверки соответствия правилам паролей'''
+        """ навешивается на перое поле для проверки соответствия правилам паролей """
         pwd = self.cleaned_data['password1']
         if pwd:
             password_validation.validate_password(pwd)
