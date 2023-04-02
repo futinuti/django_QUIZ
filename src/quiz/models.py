@@ -13,8 +13,9 @@ class BaseModel(models.Model):
 
 
 class Exam(BaseModel):
-    QUESTION_MIN_LIMIT = 3
+    QUESTION_MIN_LIMIT = 4
     QUESTION_MAX_LIMIT = 100
+    ORDER_NUM_MIN_LIMIT = 1
 
     class LEVEL(models.IntegerChoices):
         BASIC = 0, 'Basic'
@@ -39,6 +40,9 @@ class Exam(BaseModel):
 
 
 class Question(BaseModel):
+    ORDER_NUM_MIN_LIMIT = 1
+    ORDER_NUM_MAX_LIMIT = 100
+
     exam = models.ForeignKey(Exam, related_name='questions', on_delete=models.CASCADE)
     order_num = models.PositiveSmallIntegerField()
     text = models.CharField(max_length=2048)
