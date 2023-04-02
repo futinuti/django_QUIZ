@@ -40,9 +40,6 @@ class Exam(BaseModel):
 
 
 class Question(BaseModel):
-    ORDER_NUM_MIN_LIMIT = 1
-    ORDER_NUM_MAX_LIMIT = 100
-
     exam = models.ForeignKey(Exam, related_name='questions', on_delete=models.CASCADE)
     order_num = models.PositiveSmallIntegerField()
     text = models.CharField(max_length=2048)
