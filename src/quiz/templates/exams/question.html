@@ -7,17 +7,7 @@
 {% endblock %}
 
 {% block header %}
-    {{ question.order_num }}).  {{ question.text }}
-{#   <{{ question.order_num|negative }}> <{{ question.order_num|multi:5 }}>#}
-    <!-- 100%/all = x%/count -->
-{#    {% with question.order_num|add:-1|multi:100|dived:question.exam.q_count as level %}#}
-    {% expression '(%1 - 1) * 100 // %2' question.order_num question.exam.q_count as level %}
-    <div class="progress">
-      <div class="progress-bar" role="progressbar" aria-label="Basic example"
-           style="width: {{ level }}%" aria-valuenow="{{ level }}"
-           aria-valuemin="0" aria-valuemax="100">{{ level }}%</div>
-    </div>
-{#    {% endwith %}#}
+    {{ question.text }}
 {% endblock %}
 
 {% block content %}

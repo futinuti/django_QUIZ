@@ -100,10 +100,3 @@ class Result(BaseModel):
             self.state = self.STATE.FINISHED
 
         self.save()
-
-# [(False, False), (True, False), (False, False)]
-# False and False => False
-# False and True => False
-# True and False => False
-# True and True => True
-
