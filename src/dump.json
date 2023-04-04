@@ -1,0 +1,1208 @@
+[
+{
+   "model": "quiz.exam",
+   "pk": 2,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:13:22.753Z",
+      "update_timestamp": "2023-04-02T18:33:22.231Z",
+      "uuid": "083887fe-f0d6-4079-98ad-1db1cf2d1373",
+      "title": "Тест на логику",
+      "description": "Весь наш мир и все наши действия подчинены причинно‐следственным связям. Видеть их и понимать – очень важно для каждого. Для этого существует логика, протестировать которую можно очень легко и быстро. Ведь она основана на базовых понятиях, которые многие люди чувствуют просто подсознательно.",
+      "level": 1
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 3,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:34:45.179Z",
+      "update_timestamp": "2023-04-02T18:56:22.895Z",
+      "uuid": "4c0d3aeb-61d6-4dec-b741-46a25b2cee53",
+      "title": "Тест на логику 2",
+      "description": "",
+      "level": 0
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 4,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:57:16.663Z",
+      "update_timestamp": "2023-04-02T19:15:47.725Z",
+      "uuid": "dd1518fa-8f8c-42aa-bbe0-bbd0b320d59b",
+      "title": "Тест на логику 3",
+      "description": "",
+      "level": 2
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 7,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:13:22.754Z",
+      "update_timestamp": "2023-04-02T19:13:03.826Z",
+      "exam": 2,
+      "order_num": 1,
+      "text": "Шмурдик боится как мышей, так и тараканов.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 8,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:18:18.796Z",
+      "update_timestamp": "2023-04-02T19:13:24.616Z",
+      "exam": 2,
+      "order_num": 2,
+      "text": "Известно, что грымзик обязательно или полосат, или рогат, или то и другое вместе.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 9,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:20:18.433Z",
+      "update_timestamp": "2023-04-02T19:14:14.887Z",
+      "exam": 2,
+      "order_num": 3,
+      "text": "Если запырку отравить, то она сразу начнет пускать пузыри.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 10,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:21:43.345Z",
+      "update_timestamp": "2023-04-02T18:21:43.345Z",
+      "exam": 2,
+      "order_num": 4,
+      "text": "Все охлотушки умеют играть в шашки.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 11,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:23:19.128Z",
+      "update_timestamp": "2023-04-02T18:23:19.128Z",
+      "exam": 2,
+      "order_num": 5,
+      "text": "Дубараторы бывают либо хорошими, либо плохими. Неправда, что этот дубаратор не плохой.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 12,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:25:28.658Z",
+      "update_timestamp": "2023-04-02T18:25:28.658Z",
+      "exam": 2,
+      "order_num": 6,
+      "text": "В природе обнаружено более десятка тиалей. Все обнаруженные тиали сплошь красного цвета.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 13,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:27:18.865Z",
+      "update_timestamp": "2023-04-02T18:27:18.865Z",
+      "exam": 2,
+      "order_num": 7,
+      "text": "Существуют шакалы с больной мухропендией.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 14,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:28:56.782Z",
+      "update_timestamp": "2023-04-02T18:28:56.782Z",
+      "exam": 2,
+      "order_num": 8,
+      "text": "Неправда, что наша тумельница большая и круглая.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 15,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:30:34.162Z",
+      "update_timestamp": "2023-04-02T18:30:34.162Z",
+      "exam": 2,
+      "order_num": 9,
+      "text": "Джон всегда либо урдит, либо мурлит.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 16,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:31:49.738Z",
+      "update_timestamp": "2023-04-02T18:31:49.738Z",
+      "exam": 2,
+      "order_num": 10,
+      "text": "Журналисты наврали, что бздыш болотный безграмотен и нахален.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 17,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:34:45.180Z",
+      "update_timestamp": "2023-04-02T18:37:03.831Z",
+      "exam": 3,
+      "order_num": 1,
+      "text": "Если тряхнуть бурдылькой, то начнется стрельба. Бурдылькой тряхнули.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 18,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:38:52.118Z",
+      "update_timestamp": "2023-04-02T18:38:52.118Z",
+      "exam": 3,
+      "order_num": 2,
+      "text": "Если тряхнуть перпелькой, то немедленно начнется стрельба. За последний час стрельбы не было.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 19,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:40:07.464Z",
+      "update_timestamp": "2023-04-02T18:40:07.464Z",
+      "exam": 3,
+      "order_num": 3,
+      "text": "Огромный бутряк напугал деревенского старосту.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 20,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:42:27.320Z",
+      "update_timestamp": "2023-04-02T18:42:55.685Z",
+      "exam": 3,
+      "order_num": 4,
+      "text": "Если почесать угубку за ухом, он начнет довольно шипеть. Если угубок довольно зашипит, то молоко поблизости скиснет.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 21,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:45:44.572Z",
+      "update_timestamp": "2023-04-02T18:56:22.896Z",
+      "exam": 3,
+      "order_num": 5,
+      "text": "Всех, кто громко обуривает, обязательно съедают. Все ухмырки постоянно громко обуривают.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 22,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:47:21.549Z",
+      "update_timestamp": "2023-04-02T18:47:21.549Z",
+      "exam": 3,
+      "order_num": 6,
+      "text": "В реках близ Тимуграда обитает и вобла, и щука.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 23,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:49:29.114Z",
+      "update_timestamp": "2023-04-02T18:49:29.114Z",
+      "exam": 3,
+      "order_num": 7,
+      "text": "Все пуфелки радуют умом или красотой, а иногда даже и тем, и другим.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 24,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:51:14.768Z",
+      "update_timestamp": "2023-04-02T18:51:14.768Z",
+      "exam": 3,
+      "order_num": 8,
+      "text": "Когда вы спите, вы всегда мухряете.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 25,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:52:32.809Z",
+      "update_timestamp": "2023-04-02T18:52:32.810Z",
+      "exam": 3,
+      "order_num": 9,
+      "text": "Все болельщики любят ыгу.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 26,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:54:07.253Z",
+      "update_timestamp": "2023-04-02T18:54:07.253Z",
+      "exam": 3,
+      "order_num": 10,
+      "text": "Есть только два вида здунцов: красные и синие. Что касается этого конкретного здунца, то он оказался вовсе не синим.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 27,
+   "fields": {
+      "create_timestamp": "2023-04-02T18:57:16.665Z",
+      "update_timestamp": "2023-04-02T18:58:53.518Z",
+      "exam": 4,
+      "order_num": 1,
+      "text": "Найдено множество останков быдлозавров. Но все они очень плохо сохранились.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 28,
+   "fields": {
+      "create_timestamp": "2023-04-02T19:00:07.358Z",
+      "update_timestamp": "2023-04-02T19:00:07.358Z",
+      "exam": 4,
+      "order_num": 2,
+      "text": "Некоторые лапухондрии не стабильны.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 29,
+   "fields": {
+      "create_timestamp": "2023-04-02T19:02:08.823Z",
+      "update_timestamp": "2023-04-02T19:15:47.726Z",
+      "exam": 4,
+      "order_num": 3,
+      "text": "Говорили, что дукни и острые, и твердые. Оказывается, это вовсе не так.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 30,
+   "fields": {
+      "create_timestamp": "2023-04-02T19:03:20.714Z",
+      "update_timestamp": "2023-04-02T19:15:47.727Z",
+      "exam": 4,
+      "order_num": 4,
+      "text": "Кафля всегда либо бегает, либо дышит.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 31,
+   "fields": {
+      "create_timestamp": "2023-04-02T19:04:50.377Z",
+      "update_timestamp": "2023-04-02T19:04:50.377Z",
+      "exam": 4,
+      "order_num": 5,
+      "text": "Информация о том, что завтрашнее совещание будет посвящено альным утятам, оказалась ложной.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 32,
+   "fields": {
+      "create_timestamp": "2023-04-02T19:06:13.387Z",
+      "update_timestamp": "2023-04-02T19:06:13.387Z",
+      "exam": 4,
+      "order_num": 6,
+      "text": "Если облить уузку водой, она испортится сразу же. Эта уузка не испорчена. Сейчас я оболью ее водой.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 33,
+   "fields": {
+      "create_timestamp": "2023-04-02T19:07:28.266Z",
+      "update_timestamp": "2023-04-02T19:07:28.267Z",
+      "exam": 4,
+      "order_num": 7,
+      "text": "Если облить уузку водой, она испортится сразу же. Эта уузка не была испорчена.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 34,
+   "fields": {
+      "create_timestamp": "2023-04-02T19:08:31.777Z",
+      "update_timestamp": "2023-04-02T19:08:31.777Z",
+      "exam": 4,
+      "order_num": 8,
+      "text": "Вася бросил проходить этот тест, ответив только на 28 вопросов.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 35,
+   "fields": {
+      "create_timestamp": "2023-04-02T19:09:50.185Z",
+      "update_timestamp": "2023-04-02T19:09:50.185Z",
+      "exam": 4,
+      "order_num": 9,
+      "text": "Если покормить бушку, она успокоится. Спокойную бушку можно доить.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 36,
+   "fields": {
+      "create_timestamp": "2023-04-02T19:11:27.377Z",
+      "update_timestamp": "2023-04-02T19:11:27.377Z",
+      "exam": 4,
+      "order_num": 10,
+      "text": "Если обрадовать бушку, она даст молока. Бушка обрадуется, если дернуть ее за хвост",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 10,
+   "fields": {
+      "question": 7,
+      "text": "Шмурдик не боится тараканов;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 11,
+   "fields": {
+      "question": 7,
+      "text": "Шмурдик боится мышей;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 12,
+   "fields": {
+      "question": 7,
+      "text": "Шмурдик боится мышей больше, чем тараканов, но и тараканов боится тоже.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 13,
+   "fields": {
+      "question": 8,
+      "text": "Грымзик не может быть безрогим;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 14,
+   "fields": {
+      "question": 8,
+      "text": "Грымзик не может быть однотонным и безрогим одновременно;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 15,
+   "fields": {
+      "question": 8,
+      "text": "Грымзик не может быть полосатым и безрогим одновременно.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 16,
+   "fields": {
+      "question": 9,
+      "text": "Если запырка пускает пузыри, то она была отравлена;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 17,
+   "fields": {
+      "question": 9,
+      "text": "Если запырку не отравить, то она не будет пускать пузыри;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 18,
+   "fields": {
+      "question": 9,
+      "text": "Если запырка не пускает пузыри, то она не отравлена.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 19,
+   "fields": {
+      "question": 10,
+      "text": "Не бывает охлотушек, которые не умеют играть в шашки;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 20,
+   "fields": {
+      "question": 10,
+      "text": "Все, кто умеет играть в шашки, являются охлотушками;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 21,
+   "fields": {
+      "question": 10,
+      "text": "Не бывает охлотушек, которые умеют играть в шашки.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 22,
+   "fields": {
+      "question": 11,
+      "text": "Этот дубаратор хороший;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 23,
+   "fields": {
+      "question": 11,
+      "text": "Этот дубаратор средненький;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 24,
+   "fields": {
+      "question": 11,
+      "text": "Этот дубаратор плохой.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 25,
+   "fields": {
+      "question": 12,
+      "text": "По крайней мере некоторые из тиалей красного цвета;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 26,
+   "fields": {
+      "question": 12,
+      "text": "По крайней мере некоторые из тиалей зеленые;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 27,
+   "fields": {
+      "question": 12,
+      "text": "Некоторые тиали (из тех, что уже обнаружены) могут оказаться не красными.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 28,
+   "fields": {
+      "question": 13,
+      "text": "Не всякий шакал может похвастаться здоровой мухропендией;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 29,
+   "fields": {
+      "question": 13,
+      "text": "Не всякий шакал может похвастаться больной мухропендией;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 30,
+   "fields": {
+      "question": 13,
+      "text": "Существуют шакалы со здоровой мухропендией.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 31,
+   "fields": {
+      "question": 14,
+      "text": "Наша тумельница маленькая и некруглая;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 32,
+   "fields": {
+      "question": 14,
+      "text": "Наша тумельница маленькая, или некруглая, или то и другое вместе;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 33,
+   "fields": {
+      "question": 14,
+      "text": "Наша тумельница маленькая, или некруглая, но не то и другое вместе.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 34,
+   "fields": {
+      "question": 15,
+      "text": "Джон иногда урдит;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 35,
+   "fields": {
+      "question": 15,
+      "text": "Джон иногда урдит, а иногда мурлит;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 36,
+   "fields": {
+      "question": 15,
+      "text": "Джон никогда не занимается одновременно и урдением, и мурлением.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 37,
+   "fields": {
+      "question": 16,
+      "text": "На самом деле бздыш болотный образован и тактичен;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 38,
+   "fields": {
+      "question": 16,
+      "text": "На самом деле бздыш болотный безграмотен, но не нахален;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 39,
+   "fields": {
+      "question": 16,
+      "text": "Те журналисты солгали.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 40,
+   "fields": {
+      "question": 17,
+      "text": "Стрельба уже началась;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 41,
+   "fields": {
+      "question": 17,
+      "text": "Стрельба начнется когда-нибудь;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 42,
+   "fields": {
+      "question": 17,
+      "text": "Стрельба начнется когда-нибудь или уже началась.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 43,
+   "fields": {
+      "question": 18,
+      "text": "В течение последнего часа перпелькой не трясли;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 44,
+   "fields": {
+      "question": 18,
+      "text": "В течение последнего часа перпелькой трясли;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 45,
+   "fields": {
+      "question": 18,
+      "text": "А нечего было трясти чем попало.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 46,
+   "fields": {
+      "question": 19,
+      "text": "Старосте приснился ночной кошмар;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 47,
+   "fields": {
+      "question": 19,
+      "text": "Староста попробовал некачественной выпивки;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 48,
+   "fields": {
+      "question": 19,
+      "text": "Староста был напуган.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 49,
+   "fields": {
+      "question": 20,
+      "text": "Если не чесать угубка за ухом, то молоко поблизости не скиснет;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 50,
+   "fields": {
+      "question": 20,
+      "text": "Если почесать угубка за ухом, молоко поблизости скиснет;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 51,
+   "fields": {
+      "question": 20,
+      "text": "Молоко вдалеке никогда не скисает от чесания угубков.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 52,
+   "fields": {
+      "question": 21,
+      "text": "Все, кто громко обуривает- ухмырки;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 53,
+   "fields": {
+      "question": 21,
+      "text": "Всех ухмырков обязательно съедают;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 54,
+   "fields": {
+      "question": 21,
+      "text": "Некоторых ухмырков не съедают.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 55,
+   "fields": {
+      "question": 22,
+      "text": "В реках близ Тимуграда не бывает воблы;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 56,
+   "fields": {
+      "question": 22,
+      "text": "В реках близ Тимуграда обитает щука;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 57,
+   "fields": {
+      "question": 22,
+      "text": "В реках близ Тимуграда обитает только вобла и щука.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 58,
+   "fields": {
+      "question": 23,
+      "text": "Пуфелка не может быть глупой;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 59,
+   "fields": {
+      "question": 23,
+      "text": "Не бывает глупых некрасивых пуфелок;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 60,
+   "fields": {
+      "question": 23,
+      "text": "Не бывает умных красивых пуфелок.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 61,
+   "fields": {
+      "question": 24,
+      "text": "Если вы мухряете, значит, вы спите;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 62,
+   "fields": {
+      "question": 24,
+      "text": "Если вы не спите, вы не мухряете.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 63,
+   "fields": {
+      "question": 24,
+      "text": "Если вы не мухряете, значит, вы не спите.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 64,
+   "fields": {
+      "question": 25,
+      "text": "Не бывает болельщиков, которые не любят ыгу;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 65,
+   "fields": {
+      "question": 25,
+      "text": "Все, кто любит ыгу, болеет за кого-нибудь;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 66,
+   "fields": {
+      "question": 25,
+      "text": "Не бывает болельщиков, которые любят ыгу.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 67,
+   "fields": {
+      "question": 26,
+      "text": "Этот здунец синий;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 68,
+   "fields": {
+      "question": 26,
+      "text": "Этот здунец синекрасный;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 69,
+   "fields": {
+      "question": 26,
+      "text": "Этот здунец красный.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 70,
+   "fields": {
+      "question": 27,
+      "text": "Некоторые останки быдлозавров очень плохо сохранились;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 71,
+   "fields": {
+      "question": 27,
+      "text": "По крайней мере некоторые останки быдлозавров в отличном состоянии;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 72,
+   "fields": {
+      "question": 27,
+      "text": "Некоторые найденные останки быдлозавров сохранились хорошо.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 73,
+   "fields": {
+      "question": 28,
+      "text": "Не всякая лапухондрия не стабильна;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 74,
+   "fields": {
+      "question": 28,
+      "text": "Существуют стабильные лапухондрии;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 75,
+   "fields": {
+      "question": 28,
+      "text": "Не всякая лапухондрия стабильна.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 76,
+   "fields": {
+      "question": 29,
+      "text": "На самом деле дукни тупые и мягкие;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 77,
+   "fields": {
+      "question": 29,
+      "text": "На самом деле дукни тупые или мягкие или то и другое сразу",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 78,
+   "fields": {
+      "question": 29,
+      "text": "На самом деле дукни тупые или мягкие, но не то и другое сразу.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 79,
+   "fields": {
+      "question": 30,
+      "text": "Кафля дышит на бегу;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 80,
+   "fields": {
+      "question": 30,
+      "text": "Кафля не дышит стоя;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 81,
+   "fields": {
+      "question": 30,
+      "text": "Кафля не дышит на бегу.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 82,
+   "fields": {
+      "question": 31,
+      "text": "Информация оказалась ложной;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 83,
+   "fields": {
+      "question": 31,
+      "text": "Совещание будет посвящено не утятам;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 84,
+   "fields": {
+      "question": 31,
+      "text": "Совещание будет посвящено утятам, но вовсе не альным.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 85,
+   "fields": {
+      "question": 32,
+      "text": "Не надо обижать уузку;",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 86,
+   "fields": {
+      "question": 32,
+      "text": "Уузка испортится;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 87,
+   "fields": {
+      "question": 32,
+      "text": "Уузка не испортится.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 88,
+   "fields": {
+      "question": 33,
+      "text": "Уузку не обливали водой;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 89,
+   "fields": {
+      "question": 33,
+      "text": "Уузку обливали водой;",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 90,
+   "fields": {
+      "question": 33,
+      "text": "Да отстаньте вы от уузки.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 91,
+   "fields": {
+      "question": 34,
+      "text": "Вася устал, проходя тест",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 92,
+   "fields": {
+      "question": 34,
+      "text": "Вася заколебался, проходя тест",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 93,
+   "fields": {
+      "question": 34,
+      "text": "Вася не закончил тест",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 94,
+   "fields": {
+      "question": 35,
+      "text": "Если бушку не кормить, ее нельзя будет доить",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 95,
+   "fields": {
+      "question": 35,
+      "text": "Бушку можно доить, но не кормить, она сама чего-нибудь найдет и съест",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 96,
+   "fields": {
+      "question": 35,
+      "text": "После кормления бушку можно доить",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 97,
+   "fields": {
+      "question": 36,
+      "text": "Если дернуть бушку за хвост, она даст молока",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 98,
+   "fields": {
+      "question": 36,
+      "text": "Никто не обрадуется, если дернуть его за хвост",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 99,
+   "fields": {
+      "question": 36,
+      "text": "Если не дернуть бушку за хвост, она не даст молока",
+      "is_correct": false
+   }
+}
+]
