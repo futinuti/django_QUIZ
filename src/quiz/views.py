@@ -1,7 +1,7 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.views.generic import CreateView, DeleteView
 from django.views.generic import DetailView
 from django.views.generic import ListView
@@ -158,7 +158,23 @@ class ExamResultUpdateView(LoginRequiredMixin, UpdateView):
 
 
 class ExamResultDeleteView(LoginRequiredMixin, DeleteView):
-    # model = Result
-    # template_name = 'exams/details.html'
+    model = Result
 
-    pass
+    def get(self, request, *args, **kwargs):
+        uuid = kwargs.get('uuid')
+        res_uuid = kwargs.get('res_uuid')
+        user = request.user
+
+        result = self.model.objects.get(
+            user=user,
+            uuid=res_uuid
+        )
+        result.delete()
+
+        return HttpResponseRedirect(
+            reverse(
+                'quiz:details', kwargs={
+                    'uuid': uuid,
+                }
+            )
+        )

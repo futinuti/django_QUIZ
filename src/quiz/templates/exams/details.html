@@ -75,7 +75,7 @@
                                 <a class="btn btn-outline-warning" href="{% url 'quiz:result_update' exam.uuid result.uuid %}">
                                     Continue
                                 </a>
-                                <a class="btn btn-outline-danger" href="#">
+                                <a class="btn btn-outline-danger" href="{% url 'quiz:result_delete' exam.uuid result.uuid %}">
                                     Remove
                                 </a>
                             {% else %}
