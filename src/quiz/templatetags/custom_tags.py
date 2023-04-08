@@ -3,6 +3,13 @@ from django import template
 register = template.Library()
 
 
+def e_points(value, *args):
+    if expression(value, *args) < 0:
+        return 0
+    else:
+        return expression(value, *args)
+
+
 # tag
 def expression(value, *args):
     for idx, arg in enumerate(args, 1):
@@ -21,3 +28,4 @@ def expression(value, *args):
 """
 
 register.simple_tag(func=expression, name='expression')
+register.simple_tag(func=e_points, name='e_point')

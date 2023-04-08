@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load custom_tags %}
+
 {% block title %}
     Details of exam
 {% endblock %}
@@ -68,7 +70,10 @@
                         <td>{{ forloop.counter }}</td>
                         <td>{{ result.create_timestamp|date:'d-m-Y H:i' }}</td>  {# |date:'d-m-Y H:i' #}
 <!--                        добавить поинты-->
-                        <td>HA</td>
+                        <td>
+                            {% e_point '%1 - %2' result.num_correct_answers result.num_incorrect_answers as points %}
+                            {{ points }}
+                        </td>
                         <td>{{ result.get_state_display }}</td>
                         <td>
                             {% if result.state == result.STATE.NEW %}
