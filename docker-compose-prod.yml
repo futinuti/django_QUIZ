@@ -4,7 +4,8 @@ name: "quiz"
 
 services:
   web:
-    build: .
+    # для MAC
+#    platform: linux_x86_x64 примерно см документацию
     container_name: web
     # для того чтоб собрать только images в каждый сервис добавляем с учетом репозитория на doker hub
     image: futinuti/web:0.0.1
@@ -25,7 +26,6 @@ services:
     restart: always
 
   db:
-    build: ./postgres
     container_name: db
     image: futinuti/db:0.0.1
     volumes:
@@ -40,7 +40,6 @@ services:
     restart: always
 
   nginx:
-    build: ./nginx
     container_name: nginx
     image: futinuti/nginx:0.0.1
     volumes:
