@@ -31,5 +31,4 @@ jobs:
         DJANGO_DEBUG: ${{ secrets.DJANGO_DEBUG_FOR_TESTING }}
         DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
       run: |
-        cd src
         python manage.py test
