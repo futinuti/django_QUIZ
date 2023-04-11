@@ -27,8 +27,8 @@ class Exam(BaseModel):
     description = models.TextField(null=True, blank=True)
     level = models.PositiveSmallIntegerField(choices=LEVEL.choices, default=LEVEL.BASIC)
 
-    # def q_count(self):
-    #     return self.questions.count()
+    def q_count(self):
+        return self.questions.count()
 
     def __str__(self):
         return self.title

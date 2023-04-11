@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load custom_filters custom_tags %}
+
 {% block title %}
     Результат теста
 {% endblock %}
@@ -33,7 +35,20 @@
                         </tr>
                         <tr>
                             <td>Result</td>
-                            <td>{{ result.num_correct_answers }} / {{ result.num_incorrect_answers }}</td>
+                            {#                          двухцветный прогрес бар#}
+                                {% expression '%1 * 100 // %2' result.num_correct_answers result.exam.q_count as correct %}
+                                {% expression '%1 * 100 // %2' result.num_incorrect_answers result.exam.q_count as incorrect %}
+
+                            <td>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: {{ correct }}%"
+                                       aria-valuenow="{{ correct }}" aria-valuemin="0" aria-valuemax="100">
+                                      {{ correct }}</div>
+                                  <div class="progress-bar bg-warning" role="progressbar" style="width: {{ incorrect }}%"
+                                       aria-valuenow="{{ incorrect }}" aria-valuemin="0" aria-valuemax="100">
+                                      {{ incorrect }}</div>
+                                </div>
+                                {{ result.num_correct_answers }} / {{ result.num_incorrect_answers }}</td>
                         </tr>
                     </tbody>
               </table>
