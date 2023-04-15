@@ -7,7 +7,7 @@ services:
     build: .
     container_name: web
     # для того чтоб собрать только images в каждый сервис добавляем с учетом репозитория на doker hub
-    image: futinuti/web:0.0.1
+#    image: futinuti/web:0.0.1
     command: gunicorn core.wsgi:application --workers 4 --bind 0.0.0.0:8890
     volumes:
       - static_volume:/opt/src/static
@@ -27,7 +27,7 @@ services:
   db:
     build: ./postgres
     container_name: db
-    image: futinuti/db:0.0.1
+#    image: futinuti/db:0.0.1
     volumes:
       - db_data_volume:/var/lib/postgresql/data/
     env_file:
@@ -42,7 +42,7 @@ services:
   nginx:
     build: ./nginx
     container_name: nginx
-    image: futinuti/nginx:0.0.1
+#    image: futinuti/nginx:0.0.1
     volumes:
       - static_volume:/opt/src/static
       - media_volume:/opt/src/media
@@ -60,6 +60,41 @@ services:
       retries: 3
     restart: always
 
+  broker:
+    image: rabbitmq:3.9.12-alpine
+    container_name: broker
+    volumes:
+      - rabbit_volume:/var/lib/rabbitmq
+    env_file:
+      - .env_prod
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 30s
+      timeout: 30s
+      retries: 3
+    restart: always
+
+  worker:
+    build: .
+    container_name: worker
+    command: sh -c "celery -A core worker --concurrency=20 --loglevel=info"
+    env_file:
+      - .env_prod
+    depends_on:
+      broker:
+        condition: service_healthy
+    restart: always
+
+  scheduler:
+    build: .
+    container_name: scheduler
+    command: sh -c "celery -A core beat -l info"
+    env_file:
+      - .env_prod
+    depends_on:
+      broker:
+        condition: service_healthy
+    restart: always
 
 volumes:
   db_data_volume:
@@ -68,3 +103,5 @@ volumes:
     name: quiz_static
   media_volume:
     name: quiz_media
+  rabbit_volume:
+    name: quiz_broker
