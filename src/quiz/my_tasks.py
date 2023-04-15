@@ -14,3 +14,8 @@ def simple_task():
 @shared_task
 def send_email_report():
     call_command('send_report')
+
+
+@shared_task
+def send_remind_unfinished_tests():
+    call_command('remind_unfinished_tests')

@@ -64,7 +64,7 @@
    "pk": 9,
    "fields": {
       "create_timestamp": "2023-04-02T18:20:18.433Z",
-      "update_timestamp": "2023-04-02T19:14:14.887Z",
+      "update_timestamp": "2023-04-08T12:15:29.007Z",
       "exam": 2,
       "order_num": 3,
       "text": "Если запырку отравить, то она сразу начнет пускать пузыри.",
@@ -76,7 +76,7 @@
    "pk": 10,
    "fields": {
       "create_timestamp": "2023-04-02T18:21:43.345Z",
-      "update_timestamp": "2023-04-02T18:21:43.345Z",
+      "update_timestamp": "2023-04-08T12:15:44.162Z",
       "exam": 2,
       "order_num": 4,
       "text": "Все охлотушки умеют играть в шашки.",
@@ -88,7 +88,7 @@
    "pk": 11,
    "fields": {
       "create_timestamp": "2023-04-02T18:23:19.128Z",
-      "update_timestamp": "2023-04-02T18:23:19.128Z",
+      "update_timestamp": "2023-04-08T12:16:03.335Z",
       "exam": 2,
       "order_num": 5,
       "text": "Дубараторы бывают либо хорошими, либо плохими. Неправда, что этот дубаратор не плохой.",
@@ -100,7 +100,7 @@
    "pk": 12,
    "fields": {
       "create_timestamp": "2023-04-02T18:25:28.658Z",
-      "update_timestamp": "2023-04-02T18:25:28.658Z",
+      "update_timestamp": "2023-04-08T12:16:22.877Z",
       "exam": 2,
       "order_num": 6,
       "text": "В природе обнаружено более десятка тиалей. Все обнаруженные тиали сплошь красного цвета.",
@@ -112,7 +112,7 @@
    "pk": 13,
    "fields": {
       "create_timestamp": "2023-04-02T18:27:18.865Z",
-      "update_timestamp": "2023-04-02T18:27:18.865Z",
+      "update_timestamp": "2023-04-08T12:16:32.834Z",
       "exam": 2,
       "order_num": 7,
       "text": "Существуют шакалы с больной мухропендией.",
@@ -124,7 +124,7 @@
    "pk": 14,
    "fields": {
       "create_timestamp": "2023-04-02T18:28:56.782Z",
-      "update_timestamp": "2023-04-02T18:28:56.782Z",
+      "update_timestamp": "2023-04-08T12:16:45.950Z",
       "exam": 2,
       "order_num": 8,
       "text": "Неправда, что наша тумельница большая и круглая.",
@@ -136,7 +136,7 @@
    "pk": 15,
    "fields": {
       "create_timestamp": "2023-04-02T18:30:34.162Z",
-      "update_timestamp": "2023-04-02T18:30:34.162Z",
+      "update_timestamp": "2023-04-08T12:17:01.091Z",
       "exam": 2,
       "order_num": 9,
       "text": "Джон всегда либо урдит, либо мурлит.",
@@ -148,7 +148,7 @@
    "pk": 16,
    "fields": {
       "create_timestamp": "2023-04-02T18:31:49.738Z",
-      "update_timestamp": "2023-04-02T18:31:49.738Z",
+      "update_timestamp": "2023-04-08T12:17:13.839Z",
       "exam": 2,
       "order_num": 10,
       "text": "Журналисты наврали, что бздыш болотный безграмотен и нахален.",
@@ -464,7 +464,7 @@
    "fields": {
       "question": 9,
       "text": "Если запырку не отравить, то она не будет пускать пузыри;",
-      "is_correct": false
+      "is_correct": true
    }
 },
 {
@@ -473,7 +473,7 @@
    "fields": {
       "question": 9,
       "text": "Если запырка не пускает пузыри, то она не отравлена.",
-      "is_correct": true
+      "is_correct": false
    }
 },
 {
@@ -482,7 +482,7 @@
    "fields": {
       "question": 10,
       "text": "Не бывает охлотушек, которые не умеют играть в шашки;",
-      "is_correct": true
+      "is_correct": false
    }
 },
 {
@@ -491,7 +491,7 @@
    "fields": {
       "question": 10,
       "text": "Все, кто умеет играть в шашки, являются охлотушками;",
-      "is_correct": false
+      "is_correct": true
    }
 },
 {
@@ -509,7 +509,7 @@
    "fields": {
       "question": 11,
       "text": "Этот дубаратор хороший;",
-      "is_correct": true
+      "is_correct": false
    }
 },
 {
@@ -518,7 +518,7 @@
    "fields": {
       "question": 11,
       "text": "Этот дубаратор средненький;",
-      "is_correct": false
+      "is_correct": true
    }
 },
 {
@@ -536,7 +536,7 @@
    "fields": {
       "question": 12,
       "text": "По крайней мере некоторые из тиалей красного цвета;",
-      "is_correct": true
+      "is_correct": false
    }
 },
 {
@@ -545,7 +545,7 @@
    "fields": {
       "question": 12,
       "text": "По крайней мере некоторые из тиалей зеленые;",
-      "is_correct": false
+      "is_correct": true
    }
 },
 {
@@ -572,7 +572,7 @@
    "fields": {
       "question": 13,
       "text": "Не всякий шакал может похвастаться больной мухропендией;",
-      "is_correct": false
+      "is_correct": true
    }
 },
 {
@@ -581,7 +581,7 @@
    "fields": {
       "question": 13,
       "text": "Существуют шакалы со здоровой мухропендией.",
-      "is_correct": true
+      "is_correct": false
    }
 },
 {
@@ -590,7 +590,7 @@
    "fields": {
       "question": 14,
       "text": "Наша тумельница маленькая и некруглая;",
-      "is_correct": true
+      "is_correct": false
    }
 },
 {
@@ -599,7 +599,7 @@
    "fields": {
       "question": 14,
       "text": "Наша тумельница маленькая, или некруглая, или то и другое вместе;",
-      "is_correct": false
+      "is_correct": true
    }
 },
 {
@@ -626,7 +626,7 @@
    "fields": {
       "question": 15,
       "text": "Джон иногда урдит, а иногда мурлит;",
-      "is_correct": false
+      "is_correct": true
    }
 },
 {
@@ -635,7 +635,7 @@
    "fields": {
       "question": 15,
       "text": "Джон никогда не занимается одновременно и урдением, и мурлением.",
-      "is_correct": true
+      "is_correct": false
    }
 },
 {
@@ -653,7 +653,7 @@
    "fields": {
       "question": 16,
       "text": "На самом деле бздыш болотный безграмотен, но не нахален;",
-      "is_correct": false
+      "is_correct": true
    }
 },
 {
@@ -662,7 +662,7 @@
    "fields": {
       "question": 16,
       "text": "Те журналисты солгали.",
-      "is_correct": true
+      "is_correct": false
    }
 },
 {
