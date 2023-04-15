@@ -13,8 +13,8 @@ from os import getenv
 from pathlib import Path
 
 from celery.schedules import crontab
-from django.urls import reverse_lazy
 
+from django.urls import reverse_lazy
 from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
