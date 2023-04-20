@@ -19,6 +19,9 @@ from django.contrib import admin
 from django.urls import include
 from django.urls import path
 from django.views.generic import TemplateView
+# from django.views.decorators.cache import cache_page
+
+from long_task.views import get_status, home,  run_task
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,6 +29,10 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('quiz/', include('quiz.urls')),
+    path('home/', home, name='task_home'),
+    # path('home/', cache_page(30)(home), name='task_home'),
+    path('tasks/<task_id>/', get_status, name='get_status'),
+    path('tasks/', run_task, name='run_task'),
 ]
 
 if settings.DEBUG:

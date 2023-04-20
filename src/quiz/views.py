@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.cache import cache
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
@@ -76,10 +77,16 @@ class ExamResultQuestionView(LoginRequiredMixin, UpdateView):
         return uuid, res_uuid, order_num
 
     def get_question(self, uuid, order_number):
-        return Question.objects.get(
-            exam__uuid=uuid,
-            order_num=order_number
-        )
+        # проверить а нет ли этого вопроса в кэше
+        question = cache.get('question')
+        if not question:
+            question = Question.objects.get(
+                exam__uuid=uuid,
+                order_num=order_number
+            )
+            cache.set('question', question)
+
+        return question
 
     def get(self, request, *args, **kwargs):
         uuid, _, order_num = self.get_params(**kwargs)

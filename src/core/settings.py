@@ -51,12 +51,14 @@ INSTALLED_APPS = [
 
     'accounts.apps.AccountsConfig',
     'quiz.apps.QuizConfig',
+    'long_task.apps.LongTaskConfig',
 ]
 
 if DEBUG:
     INSTALLED_APPS.append('django_extensions')
 
 MIDDLEWARE = [
+    # 'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -64,6 +66,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'django.middleware.cache.FetchFromCacheMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -179,6 +182,7 @@ ADMINS = [('admin', 'admin@test.com'), ('user', 'user@test.com')]
 EMAIL_SUBJECT_PREFIX = '[QUIZ] '
 
 CELERY_BROKER_URL = getenv('CELERY_BROKER')
+CELERY_RESULT_BACKEND = getenv('CELERY_BACKEND')
 
 CELERY_BEAT_SCHEDULE = {
     'simple_task': {
@@ -196,3 +200,16 @@ CELERY_BEAT_SCHEDULE = {
 }
 
 # 'schedule': crontab(minute='0', hour='0', day_of_week='0')
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+        'LOCATION': getenv('CACHE_DB_URL'),
+        'OPTIONS': {
+            'db': '1',
+            'parser_class': 'redis.connection.PythonParser',
+            'pool_class': 'redis.BlockingConnectionPool',
+        },
+        'KEY_PREFIX': 'quiz'
+    }
+}
