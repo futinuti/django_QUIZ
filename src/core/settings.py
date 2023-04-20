@@ -13,6 +13,7 @@ from os import getenv
 from pathlib import Path
 
 from celery.schedules import crontab
+
 from django.urls import reverse_lazy
 
 from dotenv import load_dotenv
@@ -187,5 +188,11 @@ CELERY_BEAT_SCHEDULE = {
     'send_email_report': {
         'task': 'quiz.my_tasks.send_email_report',
         'schedule': crontab(minute='*/2')
-    }
+    },
+    'send_remind_unfinished_tests': {
+        'task': 'quiz.my_tasks.send_remind_unfinished_tests',
+        'schedule': crontab(minute='*/3')
+    },
 }
+
+# 'schedule': crontab(minute='0', hour='0', day_of_week='0')
